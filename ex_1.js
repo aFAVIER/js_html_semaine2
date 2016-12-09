@@ -4,7 +4,6 @@
 //alert('Nom : '+nom+'\n'+'Prénom : '+prenom+'\n'+'Ville : '+ville);
 
 ///////////////////////////////////////////////////////////////////////////////////////
-
 var name;
 name = prompt('Indiquer votre nom.');
 alert('Bonjour, '+name);
