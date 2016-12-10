@@ -36,10 +36,15 @@ var age;
 tab.push(prompt('Quel est votre sexe? (Réponder par "une fille" ou "un garçon")'));
 tab.push(prompt('Indiquer votre âge.'));
 tab.push(prompt('De quelle origine êtes-vous? (ex : "allemand" ou "allemande")'));
-if (tab[1] >= 18) {
-	age = 'majeur';
+if ((tab[0] === 'un garçon')&&(tab[1] >= 18)) {
+	age = 'majeur';	
 } 
-else {
+else if ((tab[0] === 'un garçon')&&(tab[1] < 18)) {
 	age = 'mineur';
+}	
+else if ((tab[0] === 'une fille')&&(tab[1] >= 18)) {
+	age = 'majeure';
+} else {
+	age = 'mineure';
 }
 alert('Vous êtes '+tab[0]+' '+age+' '+tab[2]+'.');
