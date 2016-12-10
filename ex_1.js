@@ -15,7 +15,7 @@
 
 //////////////////////////////////////////ex1_5////////////////////////////////////////////
 //var age;
-//age = prompt('Idiquer votre âge.')
+//age = prompt('Indiquer votre âge.')
 //if (age >= 18) {
 //	alert('Vous êtes majeur.');
 //}
@@ -24,8 +24,22 @@
 //}
 
 //////////////////////////////////////BONUS//ex1_6//////////////////////////////////////////
+//var tab = new Array;
+//tab.push(prompt('Quel est votre nom?'));
+//tab.push(prompt('Quel est votre prénom?'));
+//tab.push(prompt('Indiquer votre ville.'));
+//alert('Nom : '+tab[0]+'\n'+'Prénom : '+tab[1]+'\n'+'Ville : '+tab[2]);
+
+/////////////////////////////////////BONUS//ex1_7//////////////////////////////////////////
 var tab = new Array;
-tab.push(prompt('Quel est votre nom?'));
-tab.push(prompt('Quel est votre prénom?'));
-tab.push(prompt('Indiquer votre ville.'));
-alert('Nom : '+tab[0]+'\n'+'Prénom : '+tab[1]+'\n'+'Ville : '+tab[2]);
+var age;
+tab.push(prompt('Quel est votre sexe? (Réponder par "une fille" ou "un garçon")'));
+tab.push(prompt('Indiquer votre âge.'));
+tab.push(prompt('De quelle origine êtes-vous? (ex : "allemand" ou "allemande")'));
+if (tab[1] >= 18) {
+	age = 'majeur';
+} 
+else {
+	age = 'mineur';
+}
+alert('Vous êtes '+tab[0]+' '+age+' '+tab[2]+'.');
